@@ -1,0 +1,59 @@
+# ─── Dependencies ────────────────────────────────────────────────────────────
+node_modules/
+client/node_modules/
+
+# ─── Build output ─────────────────────────────────────────────────────────────
+dist/
+client/dist/
+build/
+
+# ─── Environment & secrets ────────────────────────────────────────────────────
+# .env is committed intentionally — it contains no secrets, only public config
+.env.local
+.env.*.local
+.env.production
+
+# ─── AWS credentials (never commit these) ────────────────────────────────────
+.aws/
+*.pem
+*.key
+
+# ─── TypeScript compiled output ───────────────────────────────────────────────
+*.js.map
+*.d.ts
+# Uncomment if you compile server TS to JS and don't want output tracked:
+# server/dist/
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ─── OS artefacts ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Editor / IDE ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── Vite ─────────────────────────────────────────────────────────────────────
+.vite/
+client/.vite/
+
+# ─── Testing ──────────────────────────────────────────────────────────────────
+coverage/
+.nyc_output/
+
+# ─── Misc ─────────────────────────────────────────────────────────────────────
+*.tsbuildinfo
+.cache/
+tmp/
+temp/
